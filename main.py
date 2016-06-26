@@ -44,7 +44,7 @@ def func():
          #generates the message from test()
          message = message+"\n"+test(**i)
       elif 'Match State' in i:
-         if i['Match State'] == 'inprogress':
+         if i['Match State'] == 'inprogress' or i['Match State']=='rain':
           #If the match is in progress
              count+=1
              #Generate an appropriate message when a match is in progress
